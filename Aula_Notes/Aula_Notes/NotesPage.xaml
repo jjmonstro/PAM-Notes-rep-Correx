@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aula_Notes.NotesPage"
+             Title="NotesPage">
+    <VerticalStackLayout>
+        <Editor
+            x:Name="Editor"
+            Placeholder="Digite suas notas"
+            />
+        <Button
+            x:Name="SaveButton"
+            Text="Save"
+            SemanticProperties.Hint="Save Button"
+            Clicked="SaveClicked"/>
+            
+        <Button
+            x:Name="DeleteButton"
+            Text="Delete"
+            SemanticProperties.Hint="Delete Button"
+            Clicked="DeleteClicked"/>
+    </VerticalStackLayout>
+</ContentPage>
